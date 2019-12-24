@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="css/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/stok.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container1">
+			<div class="banner">
+				<div class="logo">
+					<img src="img/ico.png" alt="" class="banner__image">
+				</div>
+				<nav class="nav">
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">ДИНАМИКИ</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">ПРОГРАММЫ</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">ОБЩЕСТВЕННЫЕ МЕРОПРИЯТИЯ</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">контакт</a>
+						</li>
+						<li class="nav__item">
+							<span class="close">&times;</span>
+						</li>
+					</ul>
+					<button class="hamburger hamburger--3dxy" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</nav>
+			</div>
+	</header>
+	<script>
+		var hamburger = document.querySelector(".hamburger");
+		var nav = document.querySelector(".nav__list");
+		var close = document.querySelector(".close");
+
+		hamburger.addEventListener("click", function () {
+
+			hamburger.classList.toggle("is-active");
+
+			nav.classList.add("show");
+		});
+
+		close.addEventListener("click", function () {
+
+			hamburger.classList.toggle("is-active");
+
+			nav.classList.remove("show");
+		});
+	</script>
+	<div class="container">
+		<div class="wrapper">
+			<h3 class="wrapper__text">Lorem ipsum dolor sit amet, consectetur.</h3>
+			<p class="wrapper__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+				in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+				error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+				inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+				quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+				voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+				adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+				quaerat voluptatem.</p>
+		</div>
+		<div class="block">
+			<h3 class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ad,
+				cupiditate.</h3>
+			<p class="block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+				in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+				error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+				inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+				quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+				voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+				adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+				quaerat voluptatem.</p>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="items">
+			<h1 class="items__text">CONTACT US TODAY</h1>
+			<p class="items__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem libero, nam incidunt
+				sequi quaerat nisi, est nemo voluptatibus? Eveniet facere consequatur ut praesentium iusto assumenda at,
+				placeat voluptas cum, sapiente hic, neque eius ipsam a rerum deleniti, nam earum!</p>
+			<div class="link">
+				<a href="#" class="items__btn">GET IN TOUCH</a>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
